@@ -1,0 +1,189 @@
+<template>
+  <el-container id="app" :class="{ fullpage: isFullPage, nosidebar: isIndexPage }">
+    <header class="main-header" v-if="!isFullPage">
+      <router-link to="/" custom v-slot="{ navigate }">
+        <div class="site-logo" @click="navigate">
+          <WfIcon type="logo" />
+        </div>
+      </router-link>
+      <Search style="margin-left: 8px" />
+      <MiniClock v-if="!isIndexPage" class="hidden-xs-only header-watch" />
+      <!-- padding -->
+      <div class="app-nav-pad"></div>
+      <!-- 移动端菜单按钮 -->
+      <button class="app-nav-button hidden-sm-and-up" @click="menuOpen = !menuOpen">
+        <WfIcon type="menu"></WfIcon>
+      </button>
+    </header>
+    <!-- 移动端弹出菜单 -->
+    <transition name="el-zoom-in-top">
+      <div class="app-nav-menu hidden-sm-and-up" v-if="menuOpen" @click="menuOpen = false" tabindex="0">
+        <router-link v-for="link in links" :key="link.title" :to="link.path" custom v-slot="{ navigate, isActive, isExactActive }">
+          <div class="menu-item" :class="{ 'router-link-active': link.exact ? isExactActive : isActive }" @click="navigate">
+            <WfIcon :type="link.icon"></WfIcon>
+            <span class="app-nav-title">{{ $t(link.title) }}</span>
+          </div>
+        </router-link>
+      </div>
+    </transition>
+    <el-container class="body-container">
+      <!-- 桌面端侧边菜单 -->
+      <el-aside width="60px" class="pc-aside hidden-xs-only" v-if="!isIndexPage">
+        <div class="aside-nav-menu">
+          <el-tooltip v-for="link in links" :key="link.title" :content="$t(link.title)" placement="right" :enterable="false">
+            <router-link :to="link.path" custom v-slot="{ navigate, isActive, isExactActive }">
+              <div class="menu-item" :class="{ 'router-link-active': link.exact ? isExactActive : isActive }" @click="navigate">
+                <WfIcon :type="link.icon"></WfIcon>
+              </div>
+            </router-link>
+          </el-tooltip>
+        </div>
+      </el-aside>
+      <main class="main-container" @click="menuOpen = false">
+        <router-view v-slot="{ Component }">
+          <keep-alive>
+            <component :is="Component" />
+          </keep-alive>
+        </router-view>
+        <el-dialog class="update-dialog" :title="$t('update.title')" v-model="updateMessageVisible" :before-close="readUpdate">
+          <div class="update-item" :key="i" v-for="(v, i) in updateLogs">
+            <div class="title">{{ v.version }}</div>
+            <div class="date">{{ $d(new Date(v.date), "short") }}</div>
+            <article class="md markdown-body" v-html="renderMD($t('zh') ? v.md.cn : v.md.en)"></article>
+          </div>
+          <template #footer>
+            <span class="dialog-footer">
+              <el-button size="small" type="primary" @click="readUpdate">{{ $t("update.confirm") }}</el-button>
+            </span>
+          </template>
+        </el-dialog>
+      </main>
+    </el-container>
+  </el-container>
+</template>
+
+<script lang="ts">
+import { Vue, Component, Watch, toNative } from "vue-facing-decorator";
+import MiniClock from "@/components/MiniClock.vue";
+import WfIcon from "@/components/WfIcon.vue";
+import Search from "@/components/Search.vue";
+import { RivenDatabase } from "@/warframe/codex";
+import { i18n } from "@/i18n";
+import markdown from "markdown-it";
+import { magic, version, updateLogs } from "@/version";
+import localStorage from "universal-localstorage";
+import "./less/app.less";
+
+const md = markdown();
+
+@Component({ components: { MiniClock, WfIcon, Search } })
+class App extends Vue {
+  menuOpen = false;
+  updateMessageVisible = false;
+
+  get invert(): boolean {
+    return this.$store.getters.invert;
+  }
+  get bigScreen(): boolean {
+    return this.$store.getters.bigScreen;
+  }
+
+  @Watch("invert")
+  onInvertChange() {
+    this.themeChange();
+  }
+  @Watch("bigScreen")
+  onBigScreenChange() {
+    this.themeChange();
+  }
+
+  themeChange() {
+    document.querySelector("html").className = [this.invert && "invert-theme", this.bigScreen && "bigmode"].filter(Boolean).join(" ");
+  }
+
+  viewParameter = location.search.match(/(?:\?|&)view=iframe(?=$|&)/);
+
+  get isIndexPage() {
+    return this.isFullPage || ["VisualSkillEditor", "Login", "ForgetPass", "EULA"].includes(this.$route.name as string);
+  }
+  get isFullPage() {
+    return !!this.viewParameter || ["Master"].includes(this.$route.name as string);
+  }
+  get magic() {
+    return magic;
+  }
+  get version() {
+    return version;
+  }
+  get updateLogs() {
+    return updateLogs;
+  }
+  get links() {
+    return [
+      // { title: "app.login", path: "/login", icon: "fingerprint" },
+      { title: "navigate.index", path: "/alerts", icon: "world", exact: true },
+      { title: "navigate.riven", path: "/riven", icon: "motion" },
+      { title: "navigate.weapon", path: "/weapon", icon: "extension" },
+      { title: "navigate.warframe", path: "/warframe", icon: "people" },
+      { title: "navigate.simulator", path: "/sim", icon: "renew" },
+      { title: "navigate.huangli", path: "/huangli", icon: "date" },
+      { title: "navigate.shawzin", path: "/music", icon: "shawzin" },
+      { title: "navigate.palette", path: "/palette", icon: "palette" },
+      { title: "navigate.setting", path: "/setting", icon: "settings" },
+    ].filter(v => v.title !== "navigate.huangli" || i18n.locale !== "en");
+  }
+  renderMD(text: string) {
+    return md.render(text);
+  }
+  readUpdate() {
+    this.updateMessageVisible = false;
+    localStorage.setItem("lastVersion", version);
+  }
+  mounted() {
+    this.themeChange();
+    RivenDatabase.reload();
+    const lastVersion = localStorage.getItem("lastVersion") || "0.0.0";
+    if (lastVersion !== version) this.updateMessageVisible = true;
+    if (this.$i18n.locale === "zh-CN" && !localStorage.getItem("cn")) {
+      this.$message({
+        showClose: true,
+        message: "国服用户可在设置中切换国服翻译",
+        type: "success",
+        duration: 0,
+      });
+      localStorage.setItem("cn", "yes");
+    }
+    // emmmm 讨饭
+    if (!localStorage.getItem("114514"))
+      if (localStorage.getItem("since")) {
+        // 7天后
+        if ((i18n.locale === "zh-CN" || i18n.locale === "zh-CY") && Date.now() - Number(localStorage.getItem("since")) > 7 * 864e5) {
+          this.$confirm("你已经使用一段时间本工具了，如果你觉得本工具对你有帮助，要发电支持一下吗?", "暗示", {
+            confirmButtonText: "支持一下",
+            cancelButtonText: "忽略",
+            type: "warning",
+          })
+            .then(() => {
+              this.$message({
+                type: "success",
+                message: "Nice!",
+              });
+              open("https://afdian.net/@rivenmirror/plan"); // open("https://www.patreon.com/join/RivenMirror?");
+              localStorage.setItem("114514", "1919");
+            })
+            .catch(() => {
+              this.$message({
+                type: "info",
+                message: ".......",
+              });
+              localStorage.setItem("114514", "114");
+            });
+        }
+      } else {
+        localStorage.setItem("since", String(Date.now()));
+      }
+  }
+}
+
+export default toNative(App);
+</script>

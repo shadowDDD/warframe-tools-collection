@@ -1,0 +1,2237 @@
+{
+  "SolNode0": {
+    "value": "SolNode0",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "SolNode1": {
+    "value": "巫女座 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "捕获"
+  },
+  "SolNode2": {
+    "value": "阿佛洛狄特 (金星)",
+    "enemy": "科普斯商会",
+    "type": "移动防御"
+  },
+  "SolNode3": {
+    "value": "Cordelia (天王星)",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "SolNode4": {
+    "value": "阿刻戎 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "SolNode5": {
+    "value": "Perdita (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode6": {
+    "value": "迪斯比纳 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "挖掘"
+  },
+  "SolNode7": {
+    "value": "Epimetheus (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode8": {
+    "value": "Nix (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SolNode9": {
+    "value": "罗莎琳德 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "间谍"
+  },
+  "SolNode10": {
+    "value": "忒拜 (木星)",
+    "enemy": "科普斯商会",
+    "type": "破坏"
+  },
+  "SolNode11": {
+    "value": "萨西斯 (火星)",
+    "enemy": "科普斯商会",
+    "type": "劫持"
+  },
+  "SolNode12": {
+    "value": "埃利翁 (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御"
+  },
+  "SolNode13": {
+    "value": "Bianca (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode14": {
+    "value": "乌尔托 (火星)",
+    "enemy": "双方交战",
+    "type": "歼灭"
+  },
+  "SolNode15": {
+    "value": "太平洋 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "救援"
+  },
+  "SolNode16": {
+    "value": "奥古斯都 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "挖掘"
+  },
+  "SolNode17": {
+    "value": "普罗透斯 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "SolNode18": {
+    "value": "瑞亚 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "拦截"
+  },
+  "SolNode19": {
+    "value": "恩克拉多斯 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "破坏"
+  },
+  "SolNode20": {
+    "value": "忒勒斯托 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode21": {
+    "value": "纳西塞斯 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "SolNode22": {
+    "value": "特塞拉 (金星)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "SolNode23": {
+    "value": "西塞里亚 (金星)",
+    "enemy": "科普斯商会",
+    "type": "拦截"
+  },
+  "SolNode24": {
+    "value": "奥罗 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "刺杀"
+  },
+  "SolNode25": {
+    "value": "卡里斯托 (木星)",
+    "enemy": "科普斯商会",
+    "type": "拦截"
+  },
+  "SolNode26": {
+    "value": "丽斯 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "防御"
+  },
+  "SolNode27": {
+    "value": "E主星 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode28": {
+    "value": "界王星 (水星)",
+    "enemy": "双方交战",
+    "type": "破坏"
+  },
+  "SolNode29": {
+    "value": "Oberon (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode30": {
+    "value": "奥林匹斯 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "中断"
+  },
+  "SolNode31": {
+    "value": "安苏 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "救援"
+  },
+  "SolNode32": {
+    "value": "忒堤斯 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "刺杀"
+  },
+  "SolNode33": {
+    "value": "艾丽尔 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "破坏"
+  },
+  "SolNode34": {
+    "value": "西克拉库斯 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode35": {
+    "value": "Arcadia (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode36": {
+    "value": "马蒂亚利斯 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "救援"
+  },
+  "SolNode37": {
+    "value": "Pallene (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode38": {
+    "value": "明斯 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "移动防御"
+  },
+  "SolNode39": {
+    "value": "珠穆朗玛峰 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "挖掘"
+  },
+  "SolNode40": {
+    "value": "Prospero (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode41": {
+    "value": "阿尔瓦尔 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "间谍"
+  },
+  "SolNode42": {
+    "value": "海伦 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "防御"
+  },
+  "SolNode43": {
+    "value": "地狱犬座 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "拦截"
+  },
+  "SolNode44": {
+    "value": "Mimas (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode45": {
+    "value": "天坛座 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "捕获"
+  },
+  "SolNode46": {
+    "value": "斯皮尔 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "防御"
+  },
+  "SolNode47": {
+    "value": "Janus (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode48": {
+    "value": "一统域 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "救援"
+  },
+  "SolNode49": {
+    "value": "拉里萨 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "移动防御"
+  },
+  "SolNode50": {
+    "value": "纽马 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "救援"
+  },
+  "SolNode51": {
+    "value": "哈迪斯 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "刺杀"
+  },
+  "SolNode52": {
+    "value": "Portia (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode53": {
+    "value": "忒弥斯托 (木星)",
+    "enemy": "科普斯商会",
+    "type": "刺杀"
+  },
+  "SolNode54": {
+    "value": "Silvanus (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode55": {
+    "value": "Methone (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode56": {
+    "value": "赛普拉斯 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "破坏"
+  },
+  "SolNode57": {
+    "value": "沙鸥星 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "破坏"
+  },
+  "SolNode58": {
+    "value": "赫拉斯 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode59": {
+    "value": "欧亚大陆 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御"
+  },
+  "SolNode60": {
+    "value": "卡利班 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "救援"
+  },
+  "SolNode61": {
+    "value": "伊斯塔 (金星)",
+    "enemy": "科普斯商会",
+    "type": "破坏"
+  },
+  "SolNode62": {
+    "value": "涅苏 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "SolNode63": {
+    "value": "地幔 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "捕获"
+  },
+  "SolNode64": {
+    "value": "昂巴雷尔 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "拦截"
+  },
+  "SolNode65": {
+    "value": "荧惑 (火星)",
+    "enemy": "科普斯商会",
+    "type": "破坏"
+  },
+  "SolNode66": {
+    "value": "昂达 (金星)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "SolNode67": {
+    "value": "迪俄涅 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "间谍"
+  },
+  "SolNode68": {
+    "value": "瓦利斯 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御"
+  },
+  "SolNode69": {
+    "value": "奥菲莉亚 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "生存"
+  },
+  "SolNode70": {
+    "value": "卡西尼 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "捕获"
+  },
+  "SolNode71": {
+    "value": "神祷中继站 (金星)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "SolNode72": {
+    "value": "外域界标 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "SolNode73": {
+    "value": "阿南克 (木星)",
+    "enemy": "科普斯商会",
+    "type": "捕获"
+  },
+  "SolNode74": {
+    "value": "加尔尼 (木星)",
+    "enemy": "科普斯商会",
+    "type": "移动防御"
+  },
+  "SolNode75": {
+    "value": "塞万提斯 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "破坏"
+  },
+  "SolNode76": {
+    "value": "长蛇座 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "捕获"
+  },
+  "SolNode77": {
+    "value": "Cupid (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode78": {
+    "value": "海神 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "救援"
+  },
+  "SolNode79": {
+    "value": "坎布里亚 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "间谍"
+  },
+  "SolNode80": {
+    "value": "Phoebe (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode81": {
+    "value": "帕拉斯 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "SolNode82": {
+    "value": "卡吕普索 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "破坏"
+  },
+  "SolNode83": {
+    "value": "克雷西达 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御"
+  },
+  "SolNode84": {
+    "value": "涅瑞伊得斯 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "劫持"
+  },
+  "SolNode85": {
+    "value": "盖亚 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "拦截"
+  },
+  "SolNode86": {
+    "value": "Aegaeon (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode87": {
+    "value": "伽倪墨得斯 (木星)",
+    "enemy": "科普斯商会",
+    "type": "中断"
+  },
+  "SolNode88": {
+    "value": "报神星 (木星)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "SolNode89": {
+    "value": "马里亚纳 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode90": {
+    "value": "Miranda",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "SolNode91": {
+    "value": "Iapetus (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode92": {
+    "value": "Charon (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SolNode93": {
+    "value": "基勒 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御"
+  },
+  "SolNode94": {
+    "value": "阿波罗多罗斯 (水星)",
+    "enemy": "异变感染体",
+    "type": "生存"
+  },
+  "SolNode95": {
+    "value": "Thalassa (海王星)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SolNode96": {
+    "value": "泰坦 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "生存"
+  },
+  "SolNode97": {
+    "value": "阿玛耳忒亚 (木星)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "SolNode98": {
+    "value": "苔丝狄蒙娜 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "捕获"
+  },
+  "SolNode99": {
+    "value": "战场 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "刺杀"
+  },
+  "SolNode100": {
+    "value": "埃拉拉 (木星)",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "SolNode101": {
+    "value": "基利肯 (金星)",
+    "enemy": "科普斯商会",
+    "type": "挖掘"
+  },
+  "SolNode102": {
+    "value": "奥希纳姆 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "SolNode103": {
+    "value": "M主星 (水星)",
+    "enemy": "双方交战",
+    "type": "歼灭"
+  },
+  "SolNode104": {
+    "value": "弗萨 (金星)",
+    "enemy": "科普斯商会",
+    "type": "刺杀"
+  },
+  "SolNode105": {
+    "value": "泰达尼亚 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "刺杀"
+  },
+  "SolNode106": {
+    "value": "阿拉托 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "拦截"
+  },
+  "SolNode107": {
+    "value": "韦涅拉 (金星)",
+    "enemy": "科普斯商会",
+    "type": "捕获"
+  },
+  "SolNode108": {
+    "value": "托尔斯泰 (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "刺杀"
+  },
+  "SolNode109": {
+    "value": "林尼亚 (金星)",
+    "enemy": "科普斯商会",
+    "type": "救援"
+  },
+  "SolNode110": {
+    "value": "Hyperion (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode111": {
+    "value": "Juliet (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode112": {
+    "value": "Setebos (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode113": {
+    "value": "阿瑞斯 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "破坏"
+  },
+  "SolNode114": {
+    "value": "仙侣座 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode115": {
+    "value": "Quirinus (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode116": {
+    "value": "Mab (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode117": {
+    "value": "Naiad (海王星)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SolNode118": {
+    "value": "兰麦地亚 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "中断"
+  },
+  "SolNode119": {
+    "value": "卡洛里斯 (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "救援"
+  },
+  "SolNode120": {
+    "value": "Halimede (海王星)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SolNode121": {
+    "value": "卡尔波 (木星)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "SolNode122": {
+    "value": "史黛普潮 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "防御"
+  },
+  "SolNode123": {
+    "value": "V主星 (金星)",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "SolNode124": {
+    "value": "Trinculo (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode125": {
+    "value": "木卫一 (木星)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "SolNode126": {
+    "value": "美狄丝 (木星)",
+    "enemy": "科普斯商会",
+    "type": "救援"
+  },
+  "SolNode127": {
+    "value": "普萨玛忒 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "刺杀"
+  },
+  "SolNode128": {
+    "value": "E主星 (金星)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "SolNode129": {
+    "value": "奥布山谷 (金星)",
+    "enemy": "科普斯商会",
+    "type": "自由探索"
+  },
+  "SolNode130": {
+    "value": "拉瑞斯 (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "防御"
+  },
+  "SolNode131": {
+    "value": "智神星 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode132": {
+    "value": "波德 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "间谍"
+  },
+  "SolNode133": {
+    "value": "Vedic (阋神星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode134": {
+    "value": "Varro (阋神星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode135": {
+    "value": "索恩 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "破坏"
+  },
+  "SolNode136": {
+    "value": "Olla (阋神星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode137": {
+    "value": "诺沃 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "救援"
+  },
+  "SolNode138": {
+    "value": "鲁迪 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "劫持"
+  },
+  "SolNode139": {
+    "value": "莱克斯 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "捕获"
+  },
+  "SolNode140": {
+    "value": "基思特 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御"
+  },
+  "SolNode141": {
+    "value": "卡尔 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "破坏"
+  },
+  "SolNode142": {
+    "value": "Hapke (阋神星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode143": {
+    "value": "Gefion (阋神星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode144": {
+    "value": "艾克塞塔 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "刺杀"
+  },
+  "SolNode145": {
+    "value": "Egeria (阋神星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode146": {
+    "value": "天龙座 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "生存"
+  },
+  "SolNode147": {
+    "value": "辛西亚 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "拦截"
+  },
+  "SolNode148": {
+    "value": "Cerium (阋神星)"
+  },
+  "SolNode149": {
+    "value": "卡斯塔 (谷神星)",
+    "enemy": "克隆尼阵营",
+    "type": "防御"
+  },
+  "SolNode150": {
+    "value": "Albedo (阋神星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode151": {
+    "value": "Acanth (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode152": {
+    "value": "Ascar (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode153": {
+    "value": "布鲁日 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "救援"
+  },
+  "SolNode154": {
+    "value": "Candiru (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode155": {
+    "value": "Cosis (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode156": {
+    "value": "Cyath (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode157": {
+    "value": "Giardia (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode158": {
+    "value": "Gnathos (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode159": {
+    "value": "Lepis (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode160": {
+    "value": "Histo (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode161": {
+    "value": "Hymeno (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode162": {
+    "value": "埃索斯 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "捕获"
+  },
+  "SolNode163": {
+    "value": "Ixodes (阋神星)"
+  },
+  "SolNode164": {
+    "value": "黑热病区 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "防御"
+  },
+  "SolNode165": {
+    "value": "Sporid (阋神星)",
+    "enemy": "异变感染体",
+    "type": "清巢"
+  },
+  "SolNode166": {
+    "value": "尼莫斯 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "生存"
+  },
+  "SolNode167": {
+    "value": "牛虻星 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "异变感染体资源回收"
+  },
+  "SolNode168": {
+    "value": "Phalan (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode169": {
+    "value": "Psoro (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode170": {
+    "value": "Ranova (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode171": {
+    "value": "萨克西斯 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "歼灭"
+  },
+  "SolNode172": {
+    "value": "西尼 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "拦截"
+  },
+  "SolNode173": {
+    "value": "索利姆 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "移动防御"
+  },
+  "SolNode174": {
+    "value": "Sparga (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode175": {
+    "value": "内格拉 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "清巢"
+  },
+  "SolNode176": {
+    "value": "Viver (阋神星)",
+    "enemy": "异变感染体",
+    "type": "远古惩戒"
+  },
+  "SolNode177": {
+    "value": "卡帕 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "中断"
+  },
+  "SolNode178": {
+    "value": "海德隆 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode179": {
+    "value": "Jengu (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode180": {
+    "value": "Undine (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode181": {
+    "value": "阿达罗 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode182": {
+    "value": "Camenae (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode183": {
+    "value": "沃德亚诺 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "竞技场"
+  },
+  "SolNode184": {
+    "value": "露沙卡 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "捕获"
+  },
+  "SolNode185": {
+    "value": "贝瑞希妮亚 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "拦截"
+  },
+  "SolNode186": {
+    "value": "Phithale (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "破坏"
+  },
+  "SolNode187": {
+    "value": "塞尔基 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "生存"
+  },
+  "SolNode188": {
+    "value": "克尔派 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "间谍"
+  },
+  "SolNode189": {
+    "value": "娜迦 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "救援"
+  },
+  "SolNode190": {
+    "value": "纳基 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "竞技场"
+  },
+  "SolNode191": {
+    "value": "马里德 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "劫持"
+  },
+  "SolNode192": {
+    "value": "Tikoloshe (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "间谍"
+  },
+  "SolNode193": {
+    "value": "麦罗 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "刺杀"
+  },
+  "SolNode194": {
+    "value": "Ponaturi (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode195": {
+    "value": "海德隆 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "防御"
+  },
+  "SolNode196": {
+    "value": "卡律布狄斯 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御"
+  },
+  "SolNode197": {
+    "value": "Graeae (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode198": {
+    "value": "Scylla (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode199": {
+    "value": "雅姆 (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "竞技场"
+  },
+  "SolNode200": {
+    "value": "Veles (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode201": {
+    "value": "Tiamat (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode202": {
+    "value": "Yemaja (赛德娜)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode203": {
+    "value": "亚巴顿 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "捕获"
+  },
+  "SolNode204": {
+    "value": "阿玛洛斯 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "SolNode205": {
+    "value": "巴尔 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "SolNode206": {
+    "value": "Eligor (欧罗巴)"
+  },
+  "SolNode207": {
+    "value": "Gamygyn (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SolNode208": {
+    "value": "Lillith (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SolNode209": {
+    "value": "莫拉克斯 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "移动防御"
+  },
+  "SolNode210": {
+    "value": "纳玛 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "刺杀"
+  },
+  "SolNode211": {
+    "value": "奥塞 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "拦截"
+  },
+  "SolNode212": {
+    "value": "派蒙 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "SolNode213": {
+    "value": "Shax (欧罗巴)"
+  },
+  "SolNode214": {
+    "value": "索拉斯 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "劫持"
+  },
+  "SolNode215": {
+    "value": "瓦拉克 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "SolNode216": {
+    "value": "瓦雷夫 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "挖掘"
+  },
+  "SolNode217": {
+    "value": "欧里亚斯 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "救援"
+  },
+  "SolNode218": {
+    "value": "Zagan (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SolNode219": {
+    "value": "Beleth (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SolNode220": {
+    "value": "科卡比尔 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "破坏"
+  },
+  "SolNode221": {
+    "value": "Neruda (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode222": {
+    "value": "Eminescu (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "远古惩戒"
+  },
+  "SolNode223": {
+    "value": "波伊修斯 (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode224": {
+    "value": "奥丁 (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "拦截"
+  },
+  "SolNode225": {
+    "value": "彗星 (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "间谍"
+  },
+  "SolNode226": {
+    "value": "万神星 (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode227": {
+    "value": "Verdi (水星)"
+  },
+  "SolNode228": {
+    "value": "夜灵平野(地球)",
+    "enemy": "克隆尼阵营",
+    "type": "自由探索"
+  },
+  "SolNode229": {
+    "value": "魔胎之境 (火卫二)",
+    "enemy": "异变感染体",
+    "type": "自由探索"
+  },
+  "SolNode230": {
+    "value": "永视弧域(扎里曼)",
+    "enemy": "双方交战",
+    "type": "虚空洪流"
+  },
+  "SolNode231": {
+    "value": "哈拉科防线(扎里曼)",
+    "enemy": "双方交战",
+    "type": "歼灭"
+  },
+  "SolNode232": {
+    "value": "涂沃主厅(扎里曼)",
+    "enemy": "双方交战",
+    "type": "虚空覆涌"
+  },
+  "SolNode233": {
+    "value": "奥金工场(扎里曼)",
+    "enemy": "双方交战",
+    "type": "虚空决战"
+  },
+  "SolNode234": {
+    "value": "居住舱(扎里曼)",
+    "enemy": "Tenno",
+    "type": "中继站"
+  },
+  "SolNode235": {
+    "value": "翠径(扎里曼)",
+    "enemy": "双方交战",
+    "type": "移动防御"
+  },
+  "SolNode236": {
+    "value": "双衍历程(双衍王境)",
+    "enemy": "双衍王境",
+    "type": "自由探索"
+  },
+  "SolNode237": {
+    "value": "孤独纪事(双衍王境)",
+    "enemy": "双衍王境",
+    "type": "自由探索"
+  },
+  "SolNode238": {
+    "value": "无尽回廊(双衍王境)",
+    "enemy": "双衍王境",
+    "type": "自由探索"
+  },
+  "ZarimanHub": {
+    "value": "羽化之穹(扎里曼)",
+    "enemy": "Tenno",
+    "type": "中继站"
+  },
+  "SolNode400": {
+    "value": "神王塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "歼灭"
+  },
+  "SolNode401": {
+    "value": "神后塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "捕获"
+  },
+  "SolNode402": {
+    "value": "雷争塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "防御"
+  },
+  "SolNode403": {
+    "value": "法神塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "移动防御"
+  },
+  "SolNode404": {
+    "value": "风王塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "Orokin 破坏"
+  },
+  "SolNode405": {
+    "value": "阿尼塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "生存"
+  },
+  "SolNode406": {
+    "value": "乌戈塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "捕获"
+  },
+  "SolNode407": {
+    "value": "母神塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "歼灭"
+  },
+  "SolNode408": {
+    "value": "光神塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "防御"
+  },
+  "SolNode409": {
+    "value": "死灵塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "生存"
+  },
+  "SolNode410": {
+    "value": "太阳塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "移动防御"
+  },
+  "SolNode411": {
+    "value": "守护神塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "破坏"
+  },
+  "SolNode412": {
+    "value": "光理塔 (虚空)",
+    "enemy": "奥罗金",
+    "type": "拦截"
+  },
+  "SolNode413": {
+    "value": "虛空",
+    "enemy": "墮落",
+    "type": "远古惩戒"
+  },
+  "SolNode450": {
+    "value": "Tyana Pass (火星)",
+    "enemy": "双方交战",
+    "type": "镜像防御"
+  },
+  "SolNode706": {
+    "value": "霍兰德 (火卫二)",
+    "enemy": "异变感染体",
+    "type": "捕获"
+  },
+  "SolNode707": {
+    "value": "海夫 (火卫二)",
+    "enemy": "异变感染体",
+    "type": "防御"
+  },
+  "SolNode708": {
+    "value": "弗莱格亚斯 (火卫二)",
+    "enemy": "异变感染体",
+    "type": "歼灭"
+  },
+  "SolNode709": {
+    "value": "迪鲁斯 (火卫二)",
+    "enemy": "异变感染体",
+    "type": "移动防御"
+  },
+  "SolNode710": {
+    "value": "福米多 (火卫二)",
+    "enemy": "异变感染体",
+    "type": "破坏"
+  },
+  "SolNode711": {
+    "value": "特若门 (火卫二)",
+    "enemy": "异变感染体",
+    "type": "生存"
+  },
+  "SolNode712": {
+    "value": "麦格耐瑟点 (火卫二)",
+    "enemy": "异变感染体",
+    "type": "刺杀"
+  },
+  "SolNode713": {
+    "value": "埃奎亚斯 (火卫二)",
+    "enemy": "异变感染体",
+    "type": "刺杀"
+  },
+  "SolNode714": {
+    "value": "解剖圣所(火卫二)",
+    "enemy": "Tenno",
+    "type": "中继站"
+  },
+  "SolNode715": {
+    "value": "恶涌(火卫二)",
+    "enemy": "低语者",
+    "type": "刺杀"
+  },
+  "SolNode716": {
+    "value": "孽杀(火卫二)",
+    "enemy": "低语者",
+    "type": "歼灭"
+  },
+  "SolNode717": {
+    "value": "不灭之地(火卫二)",
+    "enemy": "低语者",
+    "type": "生存"
+  },
+  "SolNode718": {
+    "value": "异化区(火卫二)",
+    "enemy": "低语者",
+    "type": "元素转换"
+  },
+  "SolNode719": {
+    "value": "墓垒(火卫二)",
+    "enemy": "低语者",
+    "type": "镜像防御"
+  },
+  "SolNode720": {
+    "value": "孤冢(火卫二)",
+    "enemy": "低语者",
+    "type": "衰退室"
+  },
+  "SolNode721": {
+    "value": "卫城区 (火卫二)",
+    "enemy": "低语者",
+    "type": "中断"
+  },
+  "SolNode740": {
+    "value": "蝠力使 (木星)",
+    "enemy": "灵煞",
+    "type": "刺杀"
+  },
+  "SolNode741": {
+    "value": "科罗 (赤毒要塞)",
+    "enemy": "克隆尼阵营",
+    "type": "强袭"
+  },
+  "SolNode742": {
+    "value": "那布克 (赤毒要塞)",
+    "enemy": "克隆尼阵营",
+    "type": "捕获"
+  },
+  "SolNode743": {
+    "value": "罗图马 (赤毒要塞)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御"
+  },
+  "SolNode744": {
+    "value": "塔韦乌尼 (赤毒要塞)",
+    "enemy": "克隆尼阵营",
+    "type": "生存"
+  },
+  "SolNode745": {
+    "value": "塔穆 (赤毒要塞)",
+    "enemy": "克隆尼阵营",
+    "type": "中断"
+  },
+  "SolNode746": {
+    "value": "达卡塔 (赤毒要塞)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "SolNode747": {
+    "value": "帕戈 (赤毒要塞)",
+    "enemy": "克隆尼阵营",
+    "type": "间谍"
+  },
+  "SolNode748": {
+    "value": "盖鲁斯 (赤毒要塞)",
+    "enemy": "克隆尼阵营",
+    "type": "救援"
+  },
+  "SolNode901": {
+    "value": "Caduceus",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "SolNode902": {
+    "value": "蒙特斯 (金星)",
+    "enemy": "科普斯商会",
+    "type": "歼灭 (曲翼)"
+  },
+  "SolNode903": {
+    "value": "优普 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御 (曲翼)"
+  },
+  "SolNode904": {
+    "value": "流沙区 (火星)",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭 (曲翼)"
+  },
+  "SolNode905": {
+    "value": "嘉利来亚 (木星)",
+    "enemy": "科普斯商会",
+    "type": "破坏 (曲翼)"
+  },
+  "SolNode906": {
+    "value": "潘多拉 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "突袭 (曲翼)"
+  },
+  "SolNode907": {
+    "value": "塞鲁斯 (天王星)",
+    "enemy": "克隆尼阵营",
+    "type": "拦截 (曲翼)"
+  },
+  "SolNode908": {
+    "value": "萨拉西亚 (海王星)",
+    "enemy": "科普斯商会",
+    "type": "移动防御 (曲翼)"
+  },
+  "SolNode300": {
+    "value": "柏拉图 (月球)",
+    "enemy": "双方交战",
+    "type": "歼灭"
+  },
+  "SolNode301": {
+    "value": "格里马尔迪 (月球)",
+    "enemy": "克隆尼阵营",
+    "type": "移动防御"
+  },
+  "SolNode302": {
+    "value": "第谷 (月球)",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "SolNode304": {
+    "value": "哥白尼 (月球)",
+    "enemy": "科普斯商会",
+    "type": "移动防御"
+  },
+  "SolNode305": {
+    "value": "施特夫勒 (月球)",
+    "enemy": "克隆尼阵营",
+    "type": "防御"
+  },
+  "SolNode306": {
+    "value": "巴甫洛夫 (月球)",
+    "enemy": "双方交战",
+    "type": "间谍"
+  },
+  "SolNode307": {
+    "value": "赛佩尔 (月球)",
+    "enemy": "科普斯商会",
+    "type": "救援"
+  },
+  "SolNode308": {
+    "value": "阿波罗 (月球)",
+    "enemy": "科普斯商会",
+    "type": "中断"
+  },
+  "SolNode309": {
+    "value": "尤外瑞安 (月球)",
+    "enemy": "奥罗金",
+    "type": "生存"
+  },
+  "SolNode310": {
+    "value": "瑟库洛斯 (月球)",
+    "enemy": "克隆尼阵营",
+    "type": "生存"
+  },
+  "SettlementNode1": {
+    "value": "罗克 (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "SettlementNode2": {
+    "value": "斯基雷斯 (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "捕获"
+  },
+  "SettlementNode3": {
+    "value": "斯蒂克尼 (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "SettlementNode4": {
+    "value": "Drunlo (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode5": {
+    "value": "Grildrig (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode6": {
+    "value": "Limtoc (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode7": {
+    "value": "Hall (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode8": {
+    "value": "Reldresal (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode9": {
+    "value": "Clustril (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode10": {
+    "value": "开普勒 (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "突袭 (曲翼)"
+  },
+  "SettlementNode11": {
+    "value": "格列佛 (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "SettlementNode12": {
+    "value": "巨岩星 (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "救援"
+  },
+  "SettlementNode13": {
+    "value": "D'Arrest (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode14": {
+    "value": "什克洛甫斯基 (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "SettlementNode15": {
+    "value": "钝角星 (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "移动防御"
+  },
+  "SettlementNode16": {
+    "value": "Wendell (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode17": {
+    "value": "Flimnap (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode18": {
+    "value": "Opik (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode19": {
+    "value": "Todd (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "远古惩戒"
+  },
+  "SettlementNode20": {
+    "value": "伊里亚特 (火卫一)",
+    "enemy": "科普斯商会",
+    "type": "刺杀"
+  },
+  "MercuryHUB": {
+    "value": "雅兰达中继站 (水星)",
+    "enemy": "克隆尼阵营",
+    "type": "中继站"
+  },
+  "VenusHUB": {
+    "value": "神祷中继站 (金星)",
+    "enemy": "科普斯商会",
+    "type": "中继站"
+  },
+  "EarthHUB": {
+    "value": "星途中继站 (地球)",
+    "enemy": "克隆尼阵营",
+    "type": "中继站"
+  },
+  "SaturnHUB": {
+    "value": "科尼亚中继站 (土星)",
+    "enemy": "克隆尼阵营",
+    "type": "中继站"
+  },
+  "ErisHUB": {
+    "value": "陨落之遗中继站 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "中继站"
+  },
+  "EuropaHUB": {
+    "value": "莱昂诺夫中继站 (欧罗巴)",
+    "enemy": "科普斯商会",
+    "type": "中继站"
+  },
+  "PlutoHUB": {
+    "value": "奥古斯都中继站 (冥王星)",
+    "enemy": "科普斯商会",
+    "type": "中继站"
+  },
+  "TradeHUB1": {
+    "value": "麦罗的集市 (火星)",
+    "enemy": "科普斯商会",
+    "type": "中继站"
+  },
+  "EventNode0": {
+    "value": "Balor",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode1": {
+    "value": "Tethra",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode2": {
+    "value": "行动代号：摧毁传送门",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode3": {
+    "value": "Elatha",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode4": {
+    "value": "机械叛乱",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "EventNode5": {
+    "value": "Birog",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode6": {
+    "value": "Tyl Reygor 深海研究所",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode7": {
+    "value": "机械叛乱",
+    "enemy": "科普斯商会",
+    "type": "拦截"
+  },
+  "EventNode8": {
+    "value": "Corb",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode9": {
+    "value": "行动代号：摧毁传送门 Pt. 2",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode10": {
+    "value": "Lugh",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode11": {
+    "value": "Nemed",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode12": {
+    "value": "行动代号：永冻晶矿前线",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode13": {
+    "value": "流沙",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode14": {
+    "value": "摧毁传送门",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode15": {
+    "value": "行动代号：永冻晶矿前线",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode16": {
+    "value": "行动代号：永冻晶矿前线",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode17": {
+    "value": "机械叛乱",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "EventNode18": {
+    "value": "机械叛乱",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "EventNode19": {
+    "value": "火星",
+    "enemy": "克隆尼阵营",
+    "type": "防御"
+  },
+  "EventNode20": {
+    "value": "Tyl Regor 深海研究所",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode22": {
+    "value": "Tyl Regor 深海研究所",
+    "enemy": "灵煞",
+    "type": "远古惩戒"
+  },
+  "EventNode24": {
+    "value": "地球",
+    "enemy": "克隆尼阵营",
+    "type": "竞技场"
+  },
+  "EventNode25": {
+    "value": "地球",
+    "enemy": "克隆尼阵营",
+    "type": "竞技场"
+  },
+  "EventNode26": {
+    "value": "地球",
+    "enemy": "克隆尼阵营",
+    "type": "歼灭"
+  },
+  "EventNode27": {
+    "value": "虚空",
+    "enemy": "堕落者",
+    "type": "生存"
+  },
+  "EventNode28": {
+    "value": "土星",
+    "enemy": "克隆尼阵营",
+    "type": "刺杀"
+  },
+  "EventNode29": {
+    "value": "土星",
+    "enemy": "克隆尼阵营",
+    "type": "刺杀"
+  },
+  "EventNode30": {
+    "value": "伽倪墨得斯 (木星)",
+    "enemy": "科普斯商会",
+    "type": "中断"
+  },
+  "EventNode31": {
+    "value": "伽倪墨得斯 (木星)",
+    "enemy": "科普斯商会",
+    "type": "中断"
+  },
+  "EventNode32": {
+    "value": "伽倪墨得斯 (木星)",
+    "enemy": "科普斯商会",
+    "type": "中断"
+  },
+  "EventNode33": {
+    "value": "伽倪墨得斯 (木星)",
+    "enemy": "科普斯商会",
+    "type": "中断"
+  },
+  "EventNode34": {
+    "value": "地球",
+    "enemy": "克隆尼阵营",
+    "type": "竞技场"
+  },
+  "EventNode35": {
+    "value": "地球",
+    "enemy": "克隆尼阵营",
+    "type": "竞技场"
+  },
+  "EventNode761": {
+    "value": "指数之场",
+    "enemy": "科普斯商会",
+    "type": "竞技场"
+  },
+  "EventNode762": {
+    "value": "指数之场 Pt 2",
+    "enemy": "科普斯商会",
+    "type": "竞技场"
+  },
+  "EventNode763": {
+    "value": "指数之场：耐久",
+    "enemy": "科普斯商会",
+    "type": "竞技场"
+  },
+  "PvpNode0": {
+    "value": "武形密仪 夺取中枢",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode1": {
+    "value": "武形密仪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode2": {
+    "value": "武形密仪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode3": {
+    "value": "武形密仪 夺取中枢",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode4": {
+    "value": "武形密仪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode5": {
+    "value": "武形密仪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode6": {
+    "value": "武形密仪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode7": {
+    "value": "武形密仪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode8": {
+    "value": "武形密仪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode9": {
+    "value": "武形密仪 團隊殲奪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode10": {
+    "value": "武形密仪 殲奪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode11": {
+    "value": "武形密仪 殲奪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode12": {
+    "value": "武形密仪 殲奪",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode13": {
+    "value": "戰術警報 : 雪球大戰!",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "PvpNode14": {
+    "value": "武形秘仪：急速锋刃",
+    "enemy": "Tenno",
+    "type": "武形密仪"
+  },
+  "ClanNode0": {
+    "value": "罗姆拉 (金星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带防御"
+  },
+  "ClanNode1": {
+    "value": "马尔瓦 (金星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode2": {
+    "value": "科巴 (地球)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带防御"
+  },
+  "ClanNode3": {
+    "value": "蒂卡尔 (地球)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带挖掘"
+  },
+  "ClanNode4": {
+    "value": "西奈 (木星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode5": {
+    "value": "卡梅里亚 (木星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode6": {
+    "value": "拉尔扎克 (欧罗巴)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带防御"
+  },
+  "ClanNode7": {
+    "value": "科里斯坦 (欧罗巴)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带挖掘"
+  },
+  "ClanNode8": {
+    "value": "卡迪什 (火星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带防御"
+  },
+  "ClanNode9": {
+    "value": "瓦希巴 (火星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode10": {
+    "value": "孟菲斯 (火卫一)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带叛逃"
+  },
+  "ClanNode11": {
+    "value": "祖格玛 (火卫一)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode12": {
+    "value": "卡拉科尔 (土星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带叛逃"
+  },
+  "ClanNode13": {
+    "value": "皮希纳斯 (土星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode14": {
+    "value": "羊神 (赛德娜)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode15": {
+    "value": "桑格鲁 (赛德娜)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带防御"
+  },
+  "ClanNode16": {
+    "value": "乌尔 (天王星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带中斷"
+  },
+  "ClanNode17": {
+    "value": "亚述 (天王星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode18": {
+    "value": "阿卡德 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带防御"
+  },
+  "ClanNode19": {
+    "value": "扎巴拉 (阋神星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode20": {
+    "value": "约萨 (海王星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带叛逃"
+  },
+  "ClanNode21": {
+    "value": "克拉辛 (海王星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode22": {
+    "value": "塞梅尼 (谷神星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带防御"
+  },
+  "ClanNode23": {
+    "value": "加贝依 (谷神星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带生存"
+  },
+  "ClanNode24": {
+    "value": "塞丘拉 (冥王星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带防御"
+  },
+  "ClanNode25": {
+    "value": "希耶拉肯 (冥王星)",
+    "enemy": "异变感染体",
+    "type": "黑暗地带挖掘"
+  },
+  "/Lotus/Types/Keys/SortieBossKeyPhorid": {
+    "value": "突击 Boss: Phorid",
+    "enemy": "异变感染体",
+    "type": "刺杀"
+  },
+  "CrewBattleNode501": {
+    "value": "魔多星团 (土星比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode502": {
+    "value": "深眠峡道 (地球比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode503": {
+    "value": "虹桥回声 (金星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "CrewBattleNode504": {
+    "value": "时空坐标 (海王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "CrewBattleNode505": {
+    "value": "Ruse 战场 (面纱)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode509": {
+    "value": "虚无神殿 (地球比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode510": {
+    "value": "Gian 点 (面纱)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode511": {
+    "value": "卫标星环 (金星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "爆发"
+  },
+  "CrewBattleNode512": {
+    "value": "欧文－哈克 (金星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "CrewBattleNode513": {
+    "value": "维斯珀峡道 (金星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "奧菲斯"
+  },
+  "CrewBattleNode514": {
+    "value": "落没之耀 (金星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "CrewBattleNode515": {
+    "value": "无垠华盖 (金星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "CrewBattleNode516": {
+    "value": "女娲之矿 (海王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "CrewBattleNode518": {
+    "value": "奥加尔星团 (地球比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode519": {
+    "value": "克姆地带 (地球比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode521": {
+    "value": "初裔冰渍区 (海王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "CrewBattleNode522": {
+    "value": "本达尔星团 (地球比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode523": {
+    "value": "诱惑之景 (海王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "奧菲斯"
+  },
+  "CrewBattleNode524": {
+    "value": "星主之握 (海王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "爆发"
+  },
+  "CrewBattleNode525": {
+    "value": "薄暮星团 (海王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "CrewBattleNode526": {
+    "value": "胡夫之遣 (冥王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "奧菲斯"
+  },
+  "CrewBattleNode527": {
+    "value": "七魅之息 (冥王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "CrewBattleNode528": {
+    "value": "冥渡 (冥王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "CrewBattleNode529": {
+    "value": "利益外缘 (冥王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "爆发"
+  },
+  "CrewBattleNode530": {
+    "value": "卡希欧安息处 (土星比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode531": {
+    "value": "芬顿之地 (冥王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "CrewBattleNode533": {
+    "value": "诺朵星峡 (土星比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode534": {
+    "value": "卢帕星道 (土星比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode535": {
+    "value": "水域星团 (土星比邻星域)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode536": {
+    "value": "外域星轴 (冥王星比邻星域)",
+    "enemy": "科普斯商会",
+    "type": "奧菲斯"
+  },
+  "CrewBattleNode538": {
+    "value": "蒲芦 (面纱)",
+    "enemy": "科普斯商会",
+    "type": "歼灭"
+  },
+  "CrewBattleNode539": {
+    "value": "努秘 (面纱)",
+    "enemy": "科普斯商会",
+    "type": "爆发"
+  },
+  "CrewBattleNode540": {
+    "value": "曲银之地 (面纱)",
+    "enemy": "科普斯商会",
+    "type": "防御"
+  },
+  "CrewBattleNode541": {
+    "value": "深情之域 (面纱)",
+    "enemy": "科普斯商会",
+    "type": "奧菲斯"
+  },
+  "CrewBattleNode542": {
+    "value": "鹿岩 (面纱)",
+    "enemy": "科普斯商会",
+    "type": "生存"
+  },
+  "CrewBattleNode543": {
+    "value": "萨米尔星云 (面纱)",
+    "enemy": "科普斯商会",
+    "type": "间谍"
+  },
+  "CrewBattleNode550": {
+    "value": "恩斯尤区格 (面纱)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode551": {
+    "value": "Ganalen 之墓 (面纱)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode552": {
+    "value": "Rya (面纱)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode553": {
+    "value": "弗雷沙 (面纱)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode554": {
+    "value": "H-2 星云 (面纱)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "CrewBattleNode555": {
+    "value": "R-9 星云 (面纱)",
+    "enemy": "克隆尼阵营",
+    "type": "前哨战"
+  },
+  "SolNode723": {
+    "value": "Brutus (Uranus)",
+    "enemy": "科普斯商会",
+    "type": "Ascension"
+  },
+  "SolarisUnitedHub1": {
+    "value": "Fortuna (Venus)",
+    "enemy": "科普斯商会",
+    "type": "中继站"
+  }
+}

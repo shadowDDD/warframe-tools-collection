@@ -1,0 +1,36 @@
+{
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts", "vite.electron.config.ts"],
+  "exclude": ["node_modules", "dist", "dist-electron", "data/node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+
+    /* vue-facing-decorator / decko 依赖 stage-2 装饰器 */
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "sourceMap": false,
+    "noEmit": true,
+    "types": ["node", "vite/client", "vite-plugin-pwa/client"]
+  }
+}

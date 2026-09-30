@@ -1,0 +1,443 @@
+@import "./common.less";
+
+.weapon-display {
+  .share-icon {
+    position: absolute;
+    right: 16px;
+    line-height: 23px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.enemy-info {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 14px;
+  color: @text_grey;
+
+  .item {
+    display: inline-block;
+
+    & > div {
+      display: inline-block;
+      padding: 4px 8px;
+      margin-right: 8px;
+      min-width: 0;
+      box-sizing: border-box;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+      position: relative;
+    }
+  }
+
+  .control {
+    padding: 0 8px;
+    width: 110px;
+    margin: 0;
+
+    .el-input__inner {
+      padding: 0 12px;
+    }
+
+    .el-input-number--small {
+      width: 100%;
+    }
+  }
+
+  .key {
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    color: @theme_main;
+    font-weight: 500;
+    border-left: 3px solid;
+    padding-left: 8px;
+  }
+}
+
+.list-complete-item {
+  transition: all 0.5s;
+}
+
+.list-complete-enter {
+  opacity: 0;
+}
+
+.list-complete-leave-active {
+  opacity: 0;
+}
+
+.enemy-sim-body {
+  > .el-form-item {
+    margin: 0;
+  }
+}
+
+.enemy-sim {
+  margin-top: 8px;
+}
+
+.build-form-editor {
+  .el-form-item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.build-tools {
+  margin-top: 16px;
+
+  .el-form-item__label,
+  .el-form-item__content,
+  .el-checkbox__label {
+    font-size: 1rem;
+    line-height: 2.8rem;
+  }
+
+  .build-tools-action {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+
+    > * {
+      flex: 1;
+    }
+  }
+}
+
+.weapon-name {
+  font-size: 1.1rem;
+}
+
+.weapon-props {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  font-size: 1em;
+
+  th {
+    color: @text_grey;
+    font-weight: inherit;
+    text-align: left;
+  }
+}
+
+.editor-main > .el-dialog__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mod-slot-container {
+  flex-wrap: wrap;
+}
+
+.mod-select {
+  max-height: 64vh;
+  overflow: auto;
+}
+
+// MODEL
+.model-selector {
+  .title {
+    line-height: 20px;
+  }
+
+  .model-name,
+  .armor-value {
+    display: block;
+
+    .el-input__inner {
+      border: 0;
+      text-align: right;
+      background: none;
+    }
+  }
+
+  .el-input--mini .el-input__icon {
+    line-height: 20px;
+  }
+
+  .el-input--mini .el-input__inner {
+    height: 20px;
+    line-height: 20px;
+  }
+}
+
+// BUFF
+.buff-head {
+  color: @theme_main;
+  margin: 8px 0;
+}
+
+.buff-slot {
+  border-left: 4px solid transparent;
+  text-align: center;
+  margin: 8px 0;
+  border-radius: 4px;
+  background: @theme_back;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left-color: #ffd6d6;
+
+  > .el-icon-plus {
+    font-size: 40px;
+    color: @theme_leaf;
+    padding: 20px;
+  }
+
+  &:hover > .el-icon-plus,
+  .el-icon-close {
+    color: @theme_main;
+  }
+
+  &.active {
+    cursor: pointer;
+  }
+}
+
+.buff-title {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  transition: 0.3s;
+  font-size: 20px;
+  border-radius: 4px 0 0 4px;
+  flex: 1;
+  position: relative;
+  flex-wrap: wrap;
+
+  &:hover {
+    background: #e8f0ff;
+  }
+
+  .mod-polarity {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    font-size: 1rem;
+  }
+
+  &.layers,
+  &.powers {
+    font-size: 14px;
+  }
+
+  .buff-name {
+    width: 100%;
+  }
+}
+
+.buff-detail {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  flex: 1;
+
+  &:hover {
+    background: #ffd6d6;
+
+    .buff-stat {
+      display: none;
+    }
+
+    .buff-action {
+      display: initial;
+    }
+  }
+}
+
+.buff-action {
+  display: none;
+}
+
+.buff-slot-remove {
+  background: 0 0;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  font-size: 36px;
+}
+
+.buff-stat {
+  .buff-prop {
+    font-size: 9pt;
+    color: @half_grey;
+  }
+
+  display: initial;
+}
+
+.buff-sum {
+  font-size: 11pt;
+  color: @text_info;
+}
+
+.buff-parm {
+  .el-input-number {
+    .el-input-number__decrease,
+    .el-input-number__increase,
+    .el-input > input {
+      background: none;
+      border: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .editor-main > .el-dialog__wrapper > .el-dialog {
+    width: 70%;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .editor-main > .el-dialog__wrapper > .el-dialog {
+    width: 90%;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mod-slot {
+    margin: 4px 0;
+  }
+}
+
+.team-editor-main {
+  .warframe-props {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    font-size: 1em;
+    th {
+      color: @text_grey;
+      font-weight: inherit;
+      text-align: left;
+    }
+  }
+  .core-info {
+    margin-bottom: 8px;
+  }
+  .core-name {
+    font-size: 1.1rem;
+  }
+  .share-icon {
+    float: right;
+    line-height: 23px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .mod-slot-container {
+    justify-content: center;
+  }
+}
+
+.skill-container {
+  .skill-name {
+    font-size: 1.4em;
+    a {
+      color: unset;
+      text-decoration: unset;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .en {
+      margin-left: 0.6em;
+      font-size: 0.6em;
+      color: @text_sliver;
+    }
+  }
+  .skill-costs {
+    text-align: right;
+    white-space: nowrap;
+    .skill-cost {
+      background: @theme_main;
+      color: @theme_back;
+      font-size: 1.2em;
+      padding: 8px 16px;
+      display: inline-block;
+      & + .skill-cost {
+        border-left: 1px solid @theme_back;
+      }
+    }
+    .skill-cost:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+    .skill-cost:last-child {
+      margin-right: -20px;
+    }
+  }
+  .skill-tags {
+    .skill-tag {
+      display: inline-block;
+      margin: 4px 4px 0 0;
+      padding: 2px 10px;
+      border: 1px solid #e3e4ea;
+      border-radius: 2px;
+      box-shadow: 2px 4px 4px @shadow;
+    }
+  }
+}
+
+.skill-effects {
+  .effect-name {
+    font-size: 1.2em;
+    margin: 4px 8px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 24px;
+      background: @theme_main;
+      vertical-align: bottom;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+  }
+  .effect-detail {
+    .effect-prop {
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 4px;
+      background: @theme_back;
+      border-radius: 4px;
+      .prop-name {
+        height: 17px;
+        line-height: 17px;
+        color: @half_greyblue;
+        font-size: 12px;
+      }
+      .prop-value {
+        height: 22px;
+        line-height: 22px;
+        color: @text_darkerblue;
+        font-size: 16px;
+      }
+    }
+  }
+}

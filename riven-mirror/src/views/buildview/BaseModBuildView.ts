@@ -1,0 +1,101 @@
+import { Vue, Prop, ComponentBase } from "vue-facing-decorator";
+import { RivenMod } from "@/warframe/rivenmod";
+import { WeaponDatabase, Buff } from "@/warframe/codex";
+import { ModBuild } from "@/warframe/modbuild";
+import { GunModBuild } from "@/warframe/gunmodbuild";
+
+// 抽象基类需要带括号形式（@ComponentBase 的类型只收非抽象构造器，运行时等价）
+@ComponentBase()
+
+export abstract class BaseModBuildView extends Vue {
+  get bigScreen(): boolean {
+    return this.$store.getters.bigScreen;
+  }
+  @Prop() riven: RivenMod;
+  selectWeapon = "";
+  get weapon() {
+    return WeaponDatabase.getWeaponByName(this.selectWeapon);
+  }
+  selectCompMethod: number = 0;
+  selectDamageType: string = "Corrosive";
+  builds: [string, ModBuild][] = [];
+
+  /** 插槽使用数 */
+  slots = 8;
+  /** 紫卡分数 */
+  score = 0;
+  /** 紫卡评级 */
+  scoreLevel = 0;
+  /** 赋能 */
+  arcanes = [];
+  /** 模式 */
+  modeIndex = -1;
+  /** 元素类型 */
+  elementTypes = {
+    Physical: ["8", "9", "A"],
+    Radiation: ["4", "7"],
+    Corrosive: ["7", "6"],
+    Gas: ["4", "6"],
+    Viral: ["5", "6"],
+    Blast: ["4", "5"],
+    Magnetic: ["5", "7"]
+  };
+  activeNames: string[] = ["buildview.yourriven"];
+
+  _debouncedRecalc: () => void;
+  abstract debouncedRecalc();
+  abstract get defalutMode(): number;
+
+  recalc(cls: any = GunModBuild, options = {}) {
+    let startTime = Date.now();
+    if (!this.riven || !this.riven.name || this.riven.properties.length < 2) return;
+    let weapon = this.weapon;
+    let stand = new cls(weapon, this.riven, options);
+    let riven = new cls(weapon, this.riven, options);
+    // console.log(this.riven.normalMod);
+    let best = stand.findBestRiven();
+    let bestRiven = new cls(weapon, best, options);
+    // 赋能数据转buff
+    if (this.arcanes && this.arcanes.length > 0) {
+      [stand, riven, bestRiven].forEach((v: ModBuild) => {
+        this.arcanes.forEach(buff => {
+          v.applyBuff(new Buff(buff));
+        });
+      });
+    }
+    stand.fill(this.slots, 0);
+    riven.fill(this.slots, 2);
+    bestRiven.fill(this.slots, 2);
+    if (this.modeIndex > -1) stand.modeIndex = riven.modeIndex = bestRiven.modeIndex = this.modeIndex;
+    else {
+      this.modeIndex = stand.modeIndex;
+    }
+    this.builds = [];
+    this.builds.push(["buildview.normal", stand]);
+    this.builds.push(["buildview.yourriven", riven]);
+    this.builds.push(["buildview.bestriven", bestRiven]);
+    this.score = Math.round((riven.compareDamage / stand.compareDamage) * 100 - 100);
+    this.scoreLevel = (this.score * 100) / Math.round((bestRiven.compareDamage / stand.compareDamage) * 100 - 100);
+    console.log(`recalc: ${Date.now() - startTime}ms`);
+  }
+  selectDamageTypeChange() {
+    if (this.selectDamageType) localStorage.setItem(this.constructor.name + ".selectDamageType", this.selectDamageType);
+    else localStorage.removeItem(this.constructor.name + ".selectDamageType");
+    this.debouncedRecalc();
+  }
+
+  get scoreLevelText() {
+    if (this.scoreLevel < 20) return "F";
+    if (this.scoreLevel < 30) return "E";
+    if (this.scoreLevel < 40) return "D";
+    if (this.scoreLevel < 50) return "C";
+    if (this.scoreLevel < 60) return "B";
+    if (this.scoreLevel < 70) return "A";
+    if (this.scoreLevel < 80) return "S";
+    if (this.scoreLevel < 90) return "S+";
+    return "EX";
+  }
+  toBuild(build: ModBuild) {
+    this.$router.push({ name: "BuildEditorWithCode", params: { id: this.weapon.url, code: build.miniCode } });
+  }
+}

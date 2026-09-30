@@ -1,0 +1,283 @@
+<template>
+  <div class="palette-container" @paste="handlePaste">
+    <el-row :gutter="20">
+      <!-- RGB输入 -->
+      <el-col :md="12" :lg="8">
+        <el-card>
+          <template #header><div class="title">{{$t("palette.title")}}</div></template>
+          <el-upload class="upload-refimage" drag :show-file-list="false" :style="{'background-image': `url(${refImageURL})`}" action="never" :before-upload="refImageUpload">
+            <div class="upload-inner">
+              <i class="el-icon-upload"></i>
+              <div class="el-upload__text" v-html="$t('palette.uploadtip')"></div>
+              <div class="bgmask"></div>
+            </div>
+          </el-upload>
+          <div class="color-box no-invert">
+            <!-- 色板 -->
+            <div class="color-palette">
+              <div class="theme-color" :title="color.hex" :style="{'background-color': color.hex}">
+              </div>
+              <div class="palette-color-list">
+                <div class="palette-color" v-for="(color, idx) in paletteColors" :style="{'background-color': color.toString()}" :key="idx" @click="setColor(color.toString())" :title="color.toString()"></div>
+              </div>
+            </div>
+            <!-- 拾色器 -->
+            <div class="color-picker">
+              <ColorPicker v-model="color" />
+              <div class="deltaE">
+                {{$t('palette.deltaE')}}
+                <el-slider v-model="deltaE"></el-slider>
+              </div>
+              <div class="recommand">
+                {{$t('palette.recommand')}}
+                <a class="link-btn" href="https://color.adobe.com/create" target="_blank" rel="noopener noreferrer">Adobe Color</a>
+              </div>
+            </div>
+          </div>
+        </el-card>
+      </el-col>
+      <!-- 色板信息输出 -->
+      <el-col :md="12" :lg="16">
+        <el-row class="palette-list" type="flex" :gutter="20">
+          <el-col :md="12" :lg="6" :xl="4" v-for="palette in matchedPalettes" :key="palette.id">
+            <el-card class="palette-box" :class="{dark: color.hsl.l < 0.5}">
+              <template #header><div class="palette-name">
+                {{$t(`palette.name.${palette.id}`)}}
+                <small>△E = {{formatDeltaE(palette.deltaE)}}</small>
+                <div class="platform-icon" v-if="palette.platforms.length<4">
+                  <WfIcon v-for="p in palette.platforms" :key="p" :type="p"/>
+                </div>
+                <div v-if="palette.limited" class="limited">{{$t("palette.limited")}}</div>
+              </div></template>
+              <div class="palette-show no-invert">
+                <div class="palette-cell" v-for="(color, idx) in palette.colors" :key="idx" @click="setColor(color.toString())" :title="color.toString()" :style="{'background-color': color.toString()}">
+                  <i v-if="palette.match.includes(idx)" class="el-icon-check"></i>
+                </div>
+              </div>
+            </el-card>
+          </el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+  </div>
+</template>
+<script lang="ts">
+import { Vue, Component, Watch, toNative } from "vue-facing-decorator";
+import { ChromePicker as ColorPicker } from "vue-color";
+import tinycolor from "tinycolor2";
+import ColorThief from "color-thief-browser";
+import { Color, PaletteData, ColorHelper } from "@/warframe/codex";
+
+@Component({
+  components: { ColorPicker },
+})
+class Palette extends Vue  {
+  // 参考图
+  refImage = null;
+  refImageURL = null;
+  paletteColors: Color[] = ["#bdaaad", "#472e25", "#cdbab8", "#584857", "#826c84", "#5e5668", "#84665c", "#928497"].map((v) => new Color(v));
+  deltaE = 30;
+
+  color: {
+    hsl: { h: number; s: number; l: number; a: number };
+    hex: string;
+  } = { hsl: { h: 0.975, s: 0.13, l: 0.7, a: 1 }, hex: "#bdaaad" };
+  get colorHEX() {
+    return this.color.hex;
+  }
+  palettes = PaletteData;
+  // matchedColors = ColorHelper.searchColor(this.colorHEX, this.deltaE);
+  // matchedPalettes = ColorHelper.searchPalette(this.colorHEX, this.deltaE);
+  // @Watch("color")
+  // reload() {
+  //   this.matchedColors = ColorHelper.searchColor(this.colorHEX, this.deltaE);
+  //   this.matchedPalettes = ColorHelper.searchPalette(this.colorHEX, this.deltaE);
+  // }
+  get matchedColors() {
+    return ColorHelper.searchColor(this.colorHEX, this.deltaE);
+  }
+  get matchedPalettes() {
+    return ColorHelper.searchPalette(this.colorHEX, this.deltaE);
+  }
+
+  setColor(color: string) {
+    let c = tinycolor(color);
+    this.color = { hsl: c.toHsl(), hex: c.toHexString() };
+  }
+  refImageUpload(file: File) {
+    let ur = URL.createObjectURL(file);
+    if (!ur) return;
+    let img = new Image();
+    img.src = this.refImageURL = ur;
+    img.onload = () => {
+      let colorThief = new ColorThief();
+      let color = new Color(colorThief.getColor(img));
+      let palette = [color].concat(colorThief.getPalette(img, 8).map((v) => new Color(v)));
+      this.paletteColors = palette;
+      this.setColor(color.toString());
+    };
+    return false;
+  }
+
+  handlePaste(ev: ClipboardEvent) {
+    let items = ev.clipboardData.items;
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+      if (item.type.startsWith("image")) {
+        ev.preventDefault();
+        let blob = item.getAsFile();
+        this.refImageUpload(blob);
+        console.log(blob, item);
+        return;
+      }
+    }
+  }
+
+  // === 生命周期钩子 ===
+  beforeMount() {
+    let img = new Image();
+    img.src = this.refImageURL = "/img/LOGO@4x.png";
+    img.onload = () => {
+      let colorThief = new ColorThief();
+      let color = new Color(colorThief.getColor(img));
+      let palette = [color].concat(colorThief.getPalette(img, 8).map((v) => new Color(v)));
+      this.paletteColors = palette;
+      this.setColor(color.toString());
+    };
+  }
+
+  // other
+  formatDeltaE(s: number) {
+    return +s.toFixed(1);
+  }
+}
+
+export default toNative(Palette);
+</script>
+<style lang="less">
+@import "../less/common.less";
+.palette-list {
+  flex-wrap: wrap;
+  .platform-icon {
+    float: right;
+    padding: 2px;
+    font-size: 16px;
+  }
+}
+.color-picker {
+  .vc-chrome {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    &:hover {
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .deltaE {
+    margin-top: 12px;
+  }
+}
+.color-box {
+  display: flex;
+  margin: 16px 0 0;
+  .color-palette {
+    flex: 1;
+    margin-right: 12px;
+  }
+  .theme-color {
+    height: 40px;
+  }
+  .palette-color {
+    display: inline-block;
+    width: calc(25% - 4px);
+    min-width: 24px;
+    height: 24px;
+  }
+  .palette-color-list {
+    margin-top: 12px;
+  }
+  .palette-color,
+  .theme-color {
+    cursor: pointer;
+    margin: 2px 4px 2px 0;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+.upload-refimage {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  .el-upload {
+    display: block;
+  }
+  .el-upload-dragger {
+    background-color: unset;
+    width: initial;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    .el-icon-upload {
+      margin: 0 0 16px;
+    }
+  }
+  .upload-inner {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: @light;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  &:hover .upload-inner {
+    opacity: 1;
+  }
+}
+.palette-box {
+  margin: 0 0 12px;
+  .palette-name {
+    small {
+      font-size: 0.8rem;
+      color: @text_grey;
+    }
+  }
+  .limited {
+    position: absolute;
+    right: -30px;
+    top: 11px;
+    transform: rotate(45deg) scale(0.9);
+    background: #ce0b0b;
+    color: #fff;
+    padding: 2px;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    user-select: none;
+  }
+}
+.palette-show {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dark .palette-cell {
+  color: #fff;
+}
+.palette-cell {
+  width: calc(20% - 2px);
+  height: 24px;
+  margin: 1px;
+  line-height: 24px;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 0 1px #333;
+    z-index: 0;
+  }
+}
+</style>
