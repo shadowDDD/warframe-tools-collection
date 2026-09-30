@@ -1,0 +1,49 @@
+name: Sync Upstream Sub-projects
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # 每天 UTC 6:00 (北京时间 14:00)
+  workflow_dispatch:      # 支持手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Sync warframe-public-export-plus
+        run: |
+          rm -rf warframe-public-export-plus
+          git clone --depth 1 https://github.com/calamity-inc/warframe-public-export-plus.git
+          rm -rf warframe-public-export-plus/.git
+
+      - name: Sync riven-mirror
+        run: |
+          rm -rf riven-mirror
+          git clone --depth 1 https://github.com/pa001024/riven-mirror.git
+          rm -rf riven-mirror/.git
+
+      - name: Sync warframe-api-server
+        run: |
+          rm -rf warframe-api-server
+          git clone --depth 1 https://github.com/Dreamsunqing/warframe-api-server.git
+          rm -rf warframe-api-server/.git
+
+      - name: Commit and Push if changed
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes detected"
+          else
+            git commit -m "chore: sync upstream sub-projects ($(date +%Y-%m-%d))"
+            git push
+          fi
